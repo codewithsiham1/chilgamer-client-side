@@ -1,0 +1,13 @@
+[
+    { "id": 1, "name": "All", "category": "All" },
+    { "id": 2, "name": "Adventure", "category": "ADVENTURE" },
+    { "id": 3, "name": "Action", "category": "ACTION" },
+    { "id": 4, "name": "Strategy", "category": "STRATEGY" },
+    { "id": 5, "name": "Racing", "category": "RACING" },
+    { "id": 6, "name": "Puzzle", "category": "PUZZLE" },
+    { "id": 7, "name": "Simulation", "category": "SIMULATION" },
+    { "id": 8, "name": "RPG", "category": "RPG" },
+    { "id": 9, "name": "Sports", "category": "SPORTS" },
+    { "id": 10, "name": "Indie", "category": "INDIE" },
+    { "id": 11, "name": "FPS", "category": "FPS" }
+  ]
