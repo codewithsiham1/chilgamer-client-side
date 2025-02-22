@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "ADVENTURE, FPS",
+      "title": "SPACE WARS",
+      "platform": "STEAM, XBOX ONE",
+      "description": "Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt laoreet",
+      "rating": 4.8,
+      "year": 2023
+    },
+    {
+      "id": 2,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "ACTION, RPG",
+      "title": "Galactic Conquest",
+      "platform": "PC, PlayStation 5",
+      "description": "A thrilling space adventure with intense battles and compelling storyline.",
+      "rating": 4.5,
+      "year": 2022
+    },
+    {
+      "id": 3,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "STRATEGY, SIMULATION",
+      "title": "Cosmic Empires",
+      "platform": "PC",
+      "description": "Build your own space empire and conquer the galaxy in this immersive strategy game.",
+      "rating": 4.7,
+      "year": 2023
+    },
+    {
+      "id": 4,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "RACING, SPORTS",
+      "title": "Star Racer",
+      "platform": "Nintendo Switch, Xbox Series X",
+      "description": "High-speed space races across the universe with stunning visuals and challenging tracks.",
+      "rating": 4.2,
+      "year": 2021
+    },
+    {
+      "id": 5,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "PUZZLE, INDIE",
+      "title": "Nebula Mysteries",
+      "platform": "PC, Mobile",
+      "description": "Solve complex puzzles and unravel the mysteries of the nebula in this captivating indie game.",
+      "rating": 4.9,
+      "year": 2024
+    },
+    {
+      "id": 6,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "ADVENTURE, FPS",
+      "title": "Planetary Survival",
+      "platform": "PC, PlayStation 5, Xbox Series X",
+      "description": "Survive on a hostile alien planet, battling creatures and uncovering ancient secrets.",
+      "rating": 4.6,
+      "year": 2022
+    },
+    {
+      "id": 7,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "ADVENTURE, FPS",
+      "title": "Echoes of the Void",
+      "platform": "PC, PlayStation 5, Xbox Series X",
+      "description": "Unravel the mysteries of the void, explore abandoned space stations and fight unknown enemies.",
+      "rating": 4.3,
+      "year": 2023
+    },
+    {
+      "id": 8,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "RPG, STRATEGY",
+      "title": "Stellar Kingdoms",
+      "platform": "PC",
+      "description": "Lead your kingdom to glory in this epic space-based strategy RPG.",
+      "rating": 4.8,
+      "year": 2024
+    },
+    {
+      "id": 9,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "SIMULATION, INDIE",
+      "title": "Space Tycoon",
+      "platform": "PC, Mobile",
+      "description": "Build and manage your own space empire in this detailed simulation game.",
+      "rating": 4.4,
+      "year": 2022
+    },
+    {
+      "id": 10,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "ACTION, ADVENTURE",
+      "title": "Quantum Leap",
+      "platform": "PlayStation 5, Xbox Series X",
+      "description": "Jump through dimensions and battle interdimensional foes in this fast-paced action game.",
+      "rating": 4.7,
+      "year": 2023
+    },
+    {
+      "id": 11,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "RACING, SIMULATION",
+      "title": "Galactic Drift",
+      "platform": "Nintendo Switch, PC",
+      "description": "Experience the thrill of high-speed space drifting in this realistic racing simulator.",
+      "rating": 4.1,
+      "year": 2021
+    },
+    {
+      "id": 12,
+      "image": "https://i.ibb.co/L63v61x/Mass-Effect-Andromeda.jpg",
+      "category": "PUZZLE, STRATEGY",
+      "title": "Celestial Logic",
+      "platform": "Mobile, PC",
+      "description": "Challenge your mind with intricate space-themed puzzles and strategic challenges.",
+      "rating": 4.9,
+      "year": 2024
+    }
+  ]

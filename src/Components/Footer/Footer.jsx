@@ -3,7 +3,7 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div className='footer'>
+        <div className='footer my-6'>
             <div className='container'>
                 <div className='footer-section'>
                     <h3>ABOUT US</h3> {/* h1 এর পরিবর্তে h3 */}

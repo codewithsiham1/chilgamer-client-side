@@ -1,0 +1,154 @@
+.card1 {
+    background-image: url(/src/assets/mini\ 1.jpg); /* Ensure correct path */
+    background-size: cover; /* Make the image cover the whole div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent repetition */
+    color: white; /* Makes text visible */
+    text-align: center;
+    padding: 50px 20px; /* Adds spacing */
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px; /* Controls width */
+    height: 300px; /* Sets a fixed height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
+}
+
+/* Dark overlay to make text readable */
+
+
+.card1 h1{
+    color:#FFC107;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+} 
+.card1 p{
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder;
+} 
+.card1 span, .card1 button {
+    position: relative;
+    z-index: 1; /* Ensures text is above the overlay */
+}
+
+/* Button Styling */
+.card1 button {
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.card1 button:hover {
+    background: darkred;
+}
+.card2{
+    background-image: url(/src/assets/mini\ 2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card2 h1{
+    color:#FFC107;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+} 
+.card2 p{
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder; 
+}
+.card2 span, .card2 button {
+    position: relative;
+    z-index: 1; /* Ensures text is above the overlay */
+}
+.card2 button{
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.card2 button:hover {
+    background: darkred;
+}
+.card3{
+    background-image: url(/src/assets/mini\ 3.jpg);
+    background-position: center;
+    background-size: cover;
+   background-repeat: no-repeat;
+   color: #fff;
+   text-align: center;
+   padding: 50px 20px;
+   border-radius: 10px;
+   width: 100%;
+   max-width: 350px;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+.card3 h1{
+    color:#FFC107;
+    font-size: large;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+}
+ .card3 p{
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder;
+ }
+  .card3 span, .card3 button {
+    position: relative;
+    z-index: 1; /* Ensures text is above the overlay */
+}
+.card3 button{
+    background: red;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.card3 button:hover {
+    background: darkred;
+}
