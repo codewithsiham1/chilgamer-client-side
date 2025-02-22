@@ -1,13 +1,16 @@
+/* Gameingcard.css */
+
 .game-card {
     width: 300px;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px;
+    margin: 10px;
     background-color: #fff;
     transition: box-shadow 0.3s ease, transform 0.3s ease;
     display: inline-block;
     vertical-align: top;
+    text-align: left;
 }
 
 .game-card:hover {
@@ -72,24 +75,10 @@
     color: #333;
     line-height: 1.5;
 }
-.game-card {
-    width: 300px;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 10px;
-    background-color: #fff;
-    transition: box-shadow 0.3s ease, transform 0.3s ease;
-    display: inline-block;
-    vertical-align: top;
-    text-align: left; /* ডিফল্ট টেক্সট এলাইনমেন্ট পরিবর্তন করা হলো */
-}
-
-/* ... আগের CSS স্টাইলগুলো ... */
 
 .explore-details-button {
-    background-color:#FFC107; /* বাটন এর ব্যাকগ্রাউন্ড কালার */
-    color: white; /* টেক্সট কালার */
+    background-color: #FFC107;
+    color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -98,10 +87,14 @@
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 15px; /* অন্যান্য এলিমেন্ট থেকে একটু দূরত্ব তৈরি করা হলো */
-    width: 100%; /* পুরো প্রস্থ জুড়ে বাটন দেখানো হলো */
+    margin-top: 15px;
+   
 }
 
 .explore-details-button:hover {
-    background-color:#FFC107; /* হোভার ইফেক্ট */
+    background-color: #FFC107;
+}
+
+.nav-link {
+    display: block;
 }

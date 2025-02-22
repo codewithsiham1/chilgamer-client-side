@@ -3,10 +3,13 @@ import Mainlayouts from "../Components/Mainlayouts/Mainlayouts";
 import Errorelement from "../Components/Errorelement/Errorelement";
 import Home from "../Components/Home/Home";
 import Allreview from "../Components/Pages/Allreview";
-import Addreview from "../Components/Pages/Addreview";
 import Gamewatchlilst from "../Components/Pages/Gamewatchlilst";
 import Myreview from "../Components/Pages/Myreview";
 import Footer from "../Components/Footer/Footer";
+import Details from "../Components/Details/Details";
+import AddReview from "../Components/Pages/AddReview/AddReview";
+import Register from "../Components/Register/Register";
+import Login from "../Components/Login/Login";
 
 const router=createBrowserRouter([
   {
@@ -25,7 +28,7 @@ const router=createBrowserRouter([
          },
          {
             path:"/addreview",
-            element:<Addreview></Addreview>
+            element:<AddReview></AddReview>
          },
          {
          path:"/myreview",
@@ -34,6 +37,24 @@ const router=createBrowserRouter([
          {
             path:"/gamewatchlist",
             element:<Gamewatchlilst></Gamewatchlilst>
+         },
+         {
+          path:"/register",
+          element:<Register></Register>
+         },
+         {
+        path:"/login",
+        element:<Login></Login>
+         },
+         {
+         path:"/details/:id",
+         element:<Details></Details>,
+         loader:async({params})=>{
+            const {id}=params
+            const response=await fetch("/game.json")
+            const games=await response.json();
+            return games.find(game=>game.id===parseInt(id));
+         }
          },
          {
             path:"/footer",
