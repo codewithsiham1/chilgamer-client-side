@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import Mainlayouts from "../Components/Mainlayouts/Mainlayouts";
 import Errorelement from "../Components/Errorelement/Errorelement";
 import Home from "../Components/Home/Home";
-import Gamewatchlilst from "../Components/Pages/Gamewatchlilst";
 import Footer from "../Components/Footer/Footer";
 import Details from "../Components/Details/Details";
 import AddReview from "../Components/Pages/AddReview/AddReview";
@@ -10,6 +9,7 @@ import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
 import Allreview from "../Components/Pages/Allreview/Allreview";
 import Myreaplay from "../Components/Pages/Myreaplay/Myreaplay";
+import Gamewatchlilst from "../Components/Gamewatchlist/Gamewatchlist";
 
 const router=createBrowserRouter([
   {
