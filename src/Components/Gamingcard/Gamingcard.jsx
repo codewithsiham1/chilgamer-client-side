@@ -24,7 +24,7 @@ const GameCard = ({ game }) => {
                     {game.year}
                 </div>
                 <p className="game-description">{game.description}</p>
-                <NavLink to={`/details/${game.id}`} className="nav-link">
+                <NavLink to={`/review/${game.id}`} className="nav-link">
                     <button className="explore-details-button">Explore Details</button>
                 </NavLink>
             </div>

@@ -47,15 +47,18 @@ const router=createBrowserRouter([
         element:<Login></Login>
          },
          {
-         path:"/details/:id",
+         path:"/review/:id",
          element:<Details></Details>,
-         loader:async({params})=>{
-            const {id}=params
-            const response=await fetch("/game.json")
-            const games=await response.json();
-            return games.find(game=>game.id===parseInt(id));
-         }
-         },
+         loader: async ({ params }) => {
+            const { id } = params;
+            const response = await fetch(`/game.json`);
+            const data = await response.json();
+            const game = data.find(game => game.id === parseInt(id));
+            return game;
+        },
+
+         
+    },
          {
             path:"/footer",
             element:<Footer></Footer>

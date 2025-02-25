@@ -1,28 +1,100 @@
-import React, { useState } from 'react';
+
+
+// import React from 'react';
+// import { useLoaderData } from 'react-router-dom';
+// import"./Details.css"
+// const Details = () => {
+//     const game = useLoaderData();
+
+//     if (!game) {
+//         return <div>Game not found</div>;
+//     }
+
+//     const handleAddToWatchlist = () => {
+//         // Logic to add game to watchlist (e.g., send request to backend)
+//         //...
+//     };
+
+//     return (
+//         <div className="game-details-page">
+//             <img src={game.image} alt={game.title} />
+//             <h2>{game.title}</h2>
+//             <p>Category: {game.category}</p>
+//             <p>Platform: {game.platform}</p>
+//             <p>Rating: {game.rating}</p>
+//             <p>Year: {game.year}</p>
+//             <p>Description: {game.description}</p>
+
+//             {/* Add to WatchList button (consider conditional rendering based on login status) */}
+//             <button onClick={handleAddToWatchlist} className="watchlist-button">
+//                     Add to WatchList
+//                 </button>
+//         </div>
+//     );
+// };
+
+// export default Details;
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
-import "./Details.css"
+import './Details.css';
+import { AuthContext } from '../Authprovider/Authprovider';
+import Swal from 'sweetalert2';
+
 const Details = () => {
     const game = useLoaderData();
-    const [watchList, setWatchList] = useState([]); // ওয়াচলিস্টের জন্য স্টেট
+    const { user } = useContext(AuthContext);
 
-    const handleAddToWatchList = () => {
-        // ওয়াচলিস্টে যুক্ত করার লজিক এখানে লিখুন
-        // ডাটাবেসে ওয়াচলিস্টে যুক্ত করার জন্য API কল করতে হবে
-        console.log('Added to WatchList:', game);
-        setWatchList([...watchList, game]); // উদাহরণস্বরূপ, ওয়াচলিস্টে যুক্ত করা
+    if (!game) {
+        return <div className="game-details-page">Game not found</div>;
+    }
+
+    const handleAddToWatchlist = async () => {
+        if (!user) {
+            Swal.fire('Please log in to add to watchlist.');
+            return;
+        }
+
+        try {
+            const response = await fetch('http://localhost:5000/watchlist', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({
+                    gameCover: game.image,
+                    gameName: game.title,
+                    rating: game.rating,
+                    year: game.year,
+                    userEmail: user.email,
+                    userName: user.displayName,
+                }),
+            });
+
+            if (response.ok) {
+                Swal.fire('Added to Watchlist!');
+            } else {
+                Swal.fire('Failed to add to Watchlist.');
+            }
+        } catch (error) {
+            console.error('Error adding to watchlist:', error);
+            Swal.fire('An error occurred.');
+        }
     };
 
     return (
-        <div className="details-container">
-            <div className="game-details">
+        <div className="game-details-page">
+            <div className="game-image-container">
                 <img src={game.image} alt={game.title} className="game-image" />
-                <h2>{game.title}</h2>
-                <p><strong>Description:</strong> {game.description}</p>
-                <p><strong>Rating:</strong> {game.rating}</p>
-                <p><strong>Genre:</strong> {game.category}</p>
-                <p><strong>Year:</strong> {game.year}</p>
-                <p><strong>Platform:</strong> {game.platform}</p>
-                <button onClick={handleAddToWatchList} className="add-to-watchlist-button">
+            </div>
+            <div className="game-info">
+                <h2 className="game-title">{game.title}</h2>
+                <p className="game-category">Category: {game.category}</p>
+                <p className="game-platform">Platform: {game.platform}</p>
+                <p className="game-rating">Rating: {game.rating}</p>
+                <p className="game-year">Year: {game.year}</p>
+                <p className="game-description">Description: {game.description}</p>
+
+                <button onClick={handleAddToWatchlist} className="add-to-watchlist-button">
                     Add to WatchList
                 </button>
             </div>
