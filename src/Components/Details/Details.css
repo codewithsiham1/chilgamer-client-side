@@ -1,37 +1,5 @@
-/* .details-container {
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-}
+/* Details.css */
 
-.game-details {
-    width: 600px;
-    border: 1px solid #ddd;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.game-image {
-    width: 100%;
-    max-height: 400px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.add-to-watchlist-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.add-to-watchlist-button:hover {
-    background-color: #0056b3;
-} */
 .game-details-page {
     display: flex;
     flex-direction: column;
@@ -83,7 +51,7 @@
     line-height: 1.6;
 }
 
-.add-to-watchlist-button { /* Changed class name here */
+.add-to-watchlist-button {
     background-color: #4CAF50;
     border: none;
     color: white;
@@ -99,20 +67,53 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.add-to-watchlist-button:hover { /* Changed class name here */
+.add-to-watchlist-button:hover {
     background-color: #3e8e41;
     transform: translateY(-2px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
 }
 
-.add-to-watchlist-button:active { /* Changed class name here */
+.add-to-watchlist-button:active {
     transform: translateY(1px);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
-@media (max-width: 600px) {
+/* Tablet */
+@media (max-width: 1024px) {
+    .game-details-page {
+        padding: 15px;
+    }
+
+    .game-image-container {
+        max-height: 300px;
+    }
+
+    .game-title {
+        font-size: 1.8em;
+    }
+
+    .game-category,
+    .game-platform,
+    .game-rating,
+    .game-year,
+    .game-description {
+        font-size: 0.95em;
+    }
+
+    .add-to-watchlist-button {
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* Phone */
+@media (max-width: 768px) {
     .game-details-page {
         padding: 10px;
+    }
+
+    .game-image-container {
+        max-height: 200px;
     }
 
     .game-title {
@@ -125,5 +126,12 @@
     .game-year,
     .game-description {
         font-size: 0.9em;
+    }
+
+    .add-to-watchlist-button {
+        padding: 10px 20px;
+        font-size: 12px;
+        width: 100%;
+        margin: 15px 0;
     }
 }

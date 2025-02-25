@@ -10,6 +10,7 @@ import Login from "../Components/Login/Login";
 import Allreview from "../Components/Pages/Allreview/Allreview";
 import Myreaplay from "../Components/Pages/Myreaplay/Myreaplay";
 import Gamewatchlilst from "../Components/Gamewatchlist/Gamewatchlist";
+import UpdateReview from "../Components/UpdateReview/UpdateReview";
 
 const router=createBrowserRouter([
   {
@@ -58,6 +59,10 @@ const router=createBrowserRouter([
         },
 
          
+    },
+    {
+   path:"/updateReview/:id",
+   element:<UpdateReview></UpdateReview>
     },
          {
             path:"/footer",

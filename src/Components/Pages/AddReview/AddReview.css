@@ -1,3 +1,5 @@
+/* AddReview.css */
+
 .add-review-container {
     max-width: 600px;
     margin: 20px auto;
@@ -68,4 +70,48 @@
 
 .add-review-container .submit-button:hover {
     background-color: #0056b3;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .add-review-container {
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    .add-review-container input[type="text"],
+    .add-review-container input[type="number"],
+    .add-review-container input[type="email"],
+    .add-review-container select,
+    .add-review-container textarea {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .add-review-container .submit-button {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .add-review-container {
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    .add-review-container input[type="text"],
+    .add-review-container input[type="number"],
+    .add-review-container input[type="email"],
+    .add-review-container select,
+    .add-review-container textarea {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .add-review-container .submit-button {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
 }

@@ -1,3 +1,5 @@
+/* Login.css */
+
 .auth-container {
     display: flex;
     flex-direction: column;
@@ -74,4 +76,39 @@
 
 .auth-container a:hover {
     text-decoration: underline;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .auth-container form {
+        width: 80%;
+    }
+
+    .auth-container .social-login {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .auth-container .social-login button {
+        margin: 5px 0;
+        width: 80%;
+    }
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .auth-container form {
+        width: 90%;
+    }
+
+    .auth-container .social-login button {
+        width: 100%;
+    }
+
+    .auth-container input,
+    .auth-container button,
+    .auth-container .social-login button {
+        padding: 8px;
+        font-size: 14px;
+    }
 }

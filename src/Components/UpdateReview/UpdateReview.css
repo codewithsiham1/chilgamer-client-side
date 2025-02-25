@@ -1,0 +1,66 @@
+/* UpdateReview.css */
+
+.update-review-container {
+    padding: 20px;
+}
+
+.update-review-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #4a5568;
+    border-radius: 4px;
+    background-color: #2d3748;
+    color: white;
+}
+
+.update-button {
+    background-color: #4299e1;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .update-review-form {
+        max-width: 90%;
+    }
+
+    .form-input {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    .update-button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .update-review-form {
+        max-width: 95%;
+    }
+
+    .form-input {
+        padding: 6px;
+        font-size: 12px;
+    }
+
+    .update-button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}

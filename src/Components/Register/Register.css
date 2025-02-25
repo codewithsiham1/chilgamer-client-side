@@ -56,3 +56,33 @@
 .auth-container a:hover {
     text-decoration: underline;
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .auth-container form {
+        width: 80%;
+    }
+
+    .auth-container input,
+    .auth-container button {
+        padding: 12px;
+        font-size: 16px;
+    }
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .auth-container form {
+        width: 90%;
+    }
+
+    .auth-container input,
+    .auth-container button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .auth-container {
+        padding: 10px;
+    }
+}

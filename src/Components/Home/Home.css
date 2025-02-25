@@ -1,11 +1,11 @@
-.game-card-container {
+/* .game-card-container {
     width: 960px; 
     margin: 0 auto; 
     padding: 20px; 
     text-align: center; 
 }
 /* Home.css */
-.category-buttons {
+/* .category-buttons {
     text-align: center;
     margin-bottom: 10px;
     margin-top: 10px;
@@ -22,4 +22,29 @@
   .category-buttons button.active {
     background-color:#fff3e0;
     color: white;
+  }  */ */
+  /* Home.css */
+
+.game-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+@media (max-width: 1024px) { /* Tablet */
+  .game-card-container {
+      grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 768px) { /* Phone */
+  .game-card-container {
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding: 0 10px;
+  }
+}

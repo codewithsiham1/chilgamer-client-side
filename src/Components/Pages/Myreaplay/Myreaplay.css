@@ -1,0 +1,20 @@
+/* Myreaplay.css */
+
+.my-reviews-container {
+    overflow-x: auto; /* Add horizontal scroll for small screens */
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+@media (max-width: 768px) {
+    .table-responsive table {
+        width: 600px; /* Adjust width as needed */
+    }
+
+    .table-responsive th,
+    .table-responsive td {
+        white-space: nowrap; /* Prevent text wrapping */
+    }
+}

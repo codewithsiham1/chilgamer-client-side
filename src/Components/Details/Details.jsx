@@ -1,39 +1,4 @@
 
-
-// import React from 'react';
-// import { useLoaderData } from 'react-router-dom';
-// import"./Details.css"
-// const Details = () => {
-//     const game = useLoaderData();
-
-//     if (!game) {
-//         return <div>Game not found</div>;
-//     }
-
-//     const handleAddToWatchlist = () => {
-//         // Logic to add game to watchlist (e.g., send request to backend)
-//         //...
-//     };
-
-//     return (
-//         <div className="game-details-page">
-//             <img src={game.image} alt={game.title} />
-//             <h2>{game.title}</h2>
-//             <p>Category: {game.category}</p>
-//             <p>Platform: {game.platform}</p>
-//             <p>Rating: {game.rating}</p>
-//             <p>Year: {game.year}</p>
-//             <p>Description: {game.description}</p>
-
-//             {/* Add to WatchList button (consider conditional rendering based on login status) */}
-//             <button onClick={handleAddToWatchlist} className="watchlist-button">
-//                     Add to WatchList
-//                 </button>
-//         </div>
-//     );
-// };
-
-// export default Details;
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import './Details.css';

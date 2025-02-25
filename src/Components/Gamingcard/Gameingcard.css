@@ -88,7 +88,6 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 15px;
-   
 }
 
 .explore-details-button:hover {
@@ -97,4 +96,51 @@
 
 .nav-link {
     display: block;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .game-card {
+        width: 250px;
+        margin: 8px;
+    }
+
+    .game-title {
+        font-size: 20px;
+    }
+
+    .game-description {
+        font-size: 14px;
+    }
+
+    .explore-details-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    .game-card {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+    }
+
+    .game-title {
+        font-size: 18px;
+    }
+
+    .game-description {
+        font-size: 12px;
+    }
+
+    .explore-details-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .game-details {
+        padding: 15px;
+    }
 }
