@@ -1,51 +1,71 @@
 .add-review-container {
-    width: 600px;
+    max-width: 600px;
     margin: 20px auto;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .add-review-container h2 {
     text-align: center;
     margin-bottom: 20px;
+    color: #333;
 }
 
-.form-group {
+.add-review-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.add-review-container .form-group {
     margin-bottom: 15px;
 }
 
-.form-group label {
+.add-review-container label {
     display: block;
     margin-bottom: 5px;
-    font-weight: bold;
+    color: #555;
 }
 
-.form-group input,
-.form-group textarea,
-.form-group select {
+.add-review-container input[type="text"],
+.add-review-container input[type="number"],
+.add-review-container input[type="email"],
+.add-review-container select,
+.add-review-container textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     box-sizing: border-box;
+    font-size: 16px;
 }
 
-.form-group textarea {
+.add-review-container textarea {
     resize: vertical;
+    min-height: 100px;
 }
 
-.submit-button {
-    background-color: #FFC107;
+.add-review-container select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23333" d="M2 0L0 2h4zm0 5L0 3h4z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 8px 10px;
+}
+
+.add-review-container .submit-button {
+    background-color: #007bff;
     color: white;
+    padding: 10px 15px;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
-    width: 100%;
+    font-size: 16px;
 }
 
-.submit-button:hover {
-    background-color: #FFD54F;
+.add-review-container .submit-button:hover {
+    background-color: #0056b3;
 }

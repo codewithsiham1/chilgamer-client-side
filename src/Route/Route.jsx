@@ -2,14 +2,14 @@ import { createBrowserRouter } from "react-router-dom";
 import Mainlayouts from "../Components/Mainlayouts/Mainlayouts";
 import Errorelement from "../Components/Errorelement/Errorelement";
 import Home from "../Components/Home/Home";
-import Allreview from "../Components/Pages/Allreview";
 import Gamewatchlilst from "../Components/Pages/Gamewatchlilst";
-import Myreview from "../Components/Pages/Myreview";
 import Footer from "../Components/Footer/Footer";
 import Details from "../Components/Details/Details";
 import AddReview from "../Components/Pages/AddReview/AddReview";
 import Register from "../Components/Register/Register";
 import Login from "../Components/Login/Login";
+import Allreview from "../Components/Pages/Allreview/Allreview";
+import Myreaplay from "../Components/Pages/Myreaplay/Myreaplay";
 
 const router=createBrowserRouter([
   {
@@ -32,7 +32,7 @@ const router=createBrowserRouter([
          },
          {
          path:"/myreview",
-         element:<Myreview></Myreview>
+         element:<Myreaplay></Myreaplay>
          },
          {
             path:"/gamewatchlist",
