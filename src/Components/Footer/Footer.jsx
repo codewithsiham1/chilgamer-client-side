@@ -6,10 +6,10 @@ const Footer = () => {
         <div className='footer my-6'>
             <div className='container'>
                 <div className='footer-section'>
-                    <h3>ABOUT US</h3> {/* h1 এর পরিবর্তে h3 */}
+                    <h3>ABOUT US</h3> 
                     <p>Amet nisl purus in mollis nunc sed id. Commodo nulla facilisi nullam vehicula ipsum a arcu cursus. Volutpat a tincidunt vitae semper pellentesque diam volutpat.</p>
                     <ul>
-                        <li><a href="#">Home</a></li> {/* href এ # যোগ করা হলো */}
+                        <li><a href="#">Home</a></li> 
                         <li><a href="#">All Reviews</a></li>
                         <li><a href="#">Add Reviews</a></li>
                         <li><a href="#">My Reviews</a></li>
@@ -17,7 +17,7 @@ const Footer = () => {
                     </ul>
                 </div>
                 <div className='footer-section'>
-                    <h3>LATEST NEWS</h3> {/* h1 এর পরিবর্তে h3 */}
+                    <h3>LATEST NEWS</h3> 
                     <div className='news-item'>
                         <h4>About Space and World</h4>
                         <p>January 2, 2018</p>
@@ -45,7 +45,7 @@ const Footer = () => {
             </div>
             <div className="footer-bottom">
                 <p>CLOUXGAME Copyright © 2018 Cloux - All rights reserved.</p>
-                <nav> {/* nav ট্যাগ ব্যবহার করা হলো */}
+                <nav> 
                     <a href="#">Home</a>
                     <a href="#">Help Center</a>
                     <a href="#">Contact</a>
