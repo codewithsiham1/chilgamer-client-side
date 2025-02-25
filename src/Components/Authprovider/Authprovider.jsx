@@ -1,28 +1,4 @@
-// import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from 'firebase/auth';
-// import React, { createContext, useState } from 'react';
-// import auth from '../../Firebase/Firebase'; 
-// export const AuthContext=createContext(null)
-// const Authprovider = ({children}) => {
-//     const [user,setUser]=useState(null)
-//     const [loading,setloading]=useState(true)
-//     const createuserEmail=(email,password)=>{
-//         setloading(true)
-//         return createUserWithEmailAndPassword(auth,email,password)
-//     }
-//     const loginUserEmail=(email,password)=>{
-//      return signInWithEmailAndPassword(auth,email,password)
-//     }
-//     const userInfo={
-//         user,loading,createuserEmail,loginUserEmail
-//     }
-//     return (
-//       <AuthContext.Provider value={userInfo}>
-//        {children}
-//       </AuthContext.Provider>
-//     );
-// };
 
-// export default Authprovider;
 import React, { createContext, useState, useEffect } from 'react';
 import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, onAuthStateChanged, signOut, GoogleAuthProvider, signInWithPopup, GithubAuthProvider } from 'firebase/auth';
 import app from '../../Firebase/Firebase';
