@@ -1,11 +1,11 @@
 import React, { useState, useContext } from 'react';
 import { useNavigate } from 'react-router-dom';
-// আপনার AuthContext এর পাথ দিন
-import Swal from 'sweetalert2'; // sweetalert2 ব্যবহার করুন
+
+import Swal from 'sweetalert2';
 import { AuthContext } from '../../Authprovider/Authprovider';
 import"./AddReview.css"
 const AddReview = () => {
-    const { user } = useContext(AuthContext); // ব্যবহারকারীর তথ্য পান
+    const { user } = useContext(AuthContext); 
     const [gameCover, setGameCover] = useState('');
     const [gameName, setGameName] = useState('');
     const [reviewDescription, setReviewDescription] = useState('');
