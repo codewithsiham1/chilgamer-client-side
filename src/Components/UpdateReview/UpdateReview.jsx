@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Authprovider/Authprovider';
-import './UpdateReview.css'; // Add CSS file
+import './UpdateReview.css'; 
 import"./UpdateReview.css"
 const UpdateReview = () => {
     const { id } = useParams();

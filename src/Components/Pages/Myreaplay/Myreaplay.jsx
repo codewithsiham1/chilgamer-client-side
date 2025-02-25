@@ -3,7 +3,7 @@ import React, { useState, useEffect, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../../Authprovider/Authprovider';
-import './Myreaplay.css'; // Add CSS file
+import './Myreaplay.css'; 
 import"./Myreaplay.css"
 const Myreaplay = () => {
     const { user } = useContext(AuthContext);

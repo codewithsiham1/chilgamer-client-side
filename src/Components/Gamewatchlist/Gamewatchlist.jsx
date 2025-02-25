@@ -2,7 +2,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Authprovider/Authprovider';
-import './Gamewatchlist.css'; // Add CSS file
+import './Gamewatchlist.css'; 
 import"./Gamewatchlist.css"
 const Gamewatchlilst = () => {
     const { user } = useContext(AuthContext);

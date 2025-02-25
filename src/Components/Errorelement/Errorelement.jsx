@@ -1,5 +1,5 @@
 import React from 'react';
-import './Errorelement.css'; // Add CSS file
+import './Errorelement.css'; 
 
 const Errorelement = () => {
     return (

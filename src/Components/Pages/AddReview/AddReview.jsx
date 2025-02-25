@@ -29,7 +29,7 @@ const AddReview = () => {
         }
 
         try {
-            const response = await fetch('http://localhost:5000/review', { // আপনার ব্যাকএন্ড URL দিন
+            const response = await fetch('http://localhost:5000/review', { 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

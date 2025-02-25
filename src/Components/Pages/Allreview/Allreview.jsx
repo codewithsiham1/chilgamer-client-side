@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import './Allreview.css'; // Add CSS file
+import './Allreview.css'; 
 import"./Allreview.css"
 const Allreview = () => {
     const [reviews, setReviews] = useState([]);
@@ -71,7 +71,7 @@ const Allreview = () => {
                         <option value='Action'>Action</option>
                         <option value='RPG'>RPG</option>
                         <option value='Adventure'>Adventure</option>
-                        {/* অন্যান্য জেনার যোগ করুন */}
+                       
                     </select>
                 </div>
             </div>
