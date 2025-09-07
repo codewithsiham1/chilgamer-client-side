@@ -25,7 +25,7 @@ const UpdateReview = () => {
     useEffect(() => {
         const fetchReview = async () => {
             try {
-                const response = await fetch(`http://localhost:5000/review/${id}`);
+                const response = await fetch(`https://chilgamer-server-side-qj94ibqsx-sihams-projects-6b0cef74.vercel.app/review/${id}`);
                 if (response.ok) {
                     const data = await response.json();
                     setReview(data);
@@ -51,7 +51,7 @@ const UpdateReview = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch(`http://localhost:5000/review/${id}`, {
+            const response = await fetch(`https://chilgamer-server-side-qj94ibqsx-sihams-projects-6b0cef74.vercel.app/review/${id}`, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

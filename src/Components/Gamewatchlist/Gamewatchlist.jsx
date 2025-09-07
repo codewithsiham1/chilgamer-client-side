@@ -12,7 +12,7 @@ const Gamewatchlilst = () => {
         if (user) {
             const fetchWatchlistItems = async () => {
                 try {
-                    const response = await fetch(`http://localhost:5000/watchlist/${user.email}`);
+                    const response = await fetch(`https://chilgamer-server-side-qj94ibqsx-sihams-projects-6b0cef74.vercel.app/watchlist/${user.email}`);
                     if (response.ok) {
                         const data = await response.json();
                         setWatchlistItems(data);
@@ -39,7 +39,7 @@ const Gamewatchlilst = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await fetch(`http://localhost:5000/watchlist/${id}`, {
+                    const response = await fetch(`https://chilgamer-server-side-qj94ibqsx-sihams-projects-6b0cef74.vercel.app/watchlist/${id}`, {
                         method: 'DELETE'
                     });
                     if (response.ok) {

@@ -12,7 +12,7 @@ const Allreview = () => {
     useEffect(() => {
         const fetchReviews = async () => {
             try {
-                const response = await fetch('http://localhost:5000/review');
+                const response = await fetch('https://chilgamer-server-side-qj94ibqsx-sihams-projects-6b0cef74.vercel.app/review');
                 if (response.ok) {
                     const data = await response.json();
                     setReviews(data);

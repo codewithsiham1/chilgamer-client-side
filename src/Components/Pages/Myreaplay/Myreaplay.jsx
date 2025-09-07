@@ -14,7 +14,7 @@ const Myreaplay = () => {
         if (user) {
             const fetchMyReviews = async () => {
                 try {
-                    const response = await fetch(`http://localhost:5000/review?email=${user.email}`);
+                    const response = await fetch(`https://chilgamer-server-side-qj94ibqsx-sihams-projects-6b0cef74.vercel.app/review?email=${user.email}`);
                     if (response.ok) {
                         const data = await response.json();
                         setMyReviews(data);
@@ -41,7 +41,7 @@ const Myreaplay = () => {
         }).then(async (result) => {
             if (result.isConfirmed) {
                 try {
-                    const response = await fetch(`http://localhost:5000/review/${id}`, {
+                    const response = await fetch(`https://chilgamer-server-side-qj94ibqsx-sihams-projects-6b0cef74.vercel.app/review/${id}`, {
                         method: 'DELETE'
                     });
                     if (response.ok) {
